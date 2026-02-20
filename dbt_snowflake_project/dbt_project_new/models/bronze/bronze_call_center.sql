@@ -1,0 +1,1 @@
+select * from {{ source ('TPCDS_SF100TCL', 'CALL_CENTER') }}
