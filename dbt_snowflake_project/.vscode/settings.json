@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "dbt.perspectiveTheme": "Vintage",
+    "dbt.enableNewLineagePanel": true
+}
