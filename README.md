@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Welcome to new dbt project!
 
 This project demonstrates a dbt (data build tool) pipeline built on Snowflake, using the Snowflake sample data (SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL). It transforms raw source tables (CALL_CENTER, CUSTOMER, INVENTORY) into clean, structured bronze, silver, and gold layers within a dedicated database (SNOWFLAKE_DBT_PRACTICE_DB). 
 
