@@ -1,8 +1,0 @@
-sources:
-  - name: TPCDS_SF100TCL
-    database: SNOWFLAKE_SAMPLE_DATA  
-    schema: TPCDS_SF100TCL  
-    tables:
-      - name: CALL_CENTER
-      - name: CUSTOMER
-      - name: INVENTORY
