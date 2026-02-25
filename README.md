@@ -4,24 +4,8 @@ This project demonstrates a dbt (data build tool) pipeline built on Snowflake, u
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/45269cd9-d100-4d3b-bde7-dc8c431e3a7c" />
 
+
 **Project Structure**
-.
-├── analyses/
-├── macros/
-├── models/
-│   ├── bronze/
-│   │   ├── bronze_call_center.sql
-│   │   ├── bronze_customer.sql
-│   │   └── bronze_inventory.sql
-│   ├── silver/
-│   │   ├── call_center_silver.sql
-│   │   ├── customers_silver.sql
-│   │   └── inventory_silver.sql
-│   ├── gold/
-│   │   └── metadata_given_configs.sql
-│   └── sources/
-│       └── sources.yml
-├── seeds/
-├── tests/
-├── dbt_project.yml
-└── README.md
+
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/c72586ea-7431-4984-9500-42499c679943" />
+
