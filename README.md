@@ -1,15 +1,27 @@
 Welcome to your new dbt project!
 
-### Using the starter project
+This project demonstrates a dbt (data build tool) pipeline built on Snowflake, using the Snowflake sample data (SNOWFLAKE_SAMPLE_DATA.TPCDS_SF10TCL). It transforms raw source tables (CALL_CENTER, CUSTOMER, INVENTORY) into clean, structured bronze, silver, and gold layers within a dedicated database (SNOWFLAKE_DBT_PRACTICE_DB). 
 
-Try running the following commands:
-- dbt run
-- dbt test
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/45269cd9-d100-4d3b-bde7-dc8c431e3a7c" />
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+**Project Structure**
+.
+├── analyses/
+├── macros/
+├── models/
+│   ├── bronze/
+│   │   ├── bronze_call_center.sql
+│   │   ├── bronze_customer.sql
+│   │   └── bronze_inventory.sql
+│   ├── silver/
+│   │   ├── call_center_silver.sql
+│   │   ├── customers_silver.sql
+│   │   └── inventory_silver.sql
+│   ├── gold/
+│   │   └── metadata_given_configs.sql
+│   └── sources/
+│       └── sources.yml
+├── seeds/
+├── tests/
+├── dbt_project.yml
+└── README.md
