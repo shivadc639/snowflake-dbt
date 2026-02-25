@@ -1,0 +1,17 @@
+uv init
+uv sync
+uv add dbt-core
+uv add dbt-snowflake
+dbt init
+dbt run / dbt sun --select models/demo 
+
+
+materialistion preferences
+inline---> 1st precedence
+model--->2nd precedence
+dbt_project.yml--->3rd precedence 
+
+If for eg in dbt_project.yml materialistion is given as view and in .yml file under model folder materialistion is given as table then object will be created as table.
+But for the same if in inline with model like below as view then object will be created as 'view'.
+{{ config(materialized = 'view') }}
+select * from table limit 30
